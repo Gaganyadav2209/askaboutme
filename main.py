@@ -6,7 +6,7 @@ from streamlit.components.v1 import html
 from dotenv import load_dotenv
 
 load_dotenv()
-os.environ.get("OPENAI_API_KEY")
+openai_api_key = os.environ.get("OPENAI_API_KEY")
 
 SYSTEM_PROMPT = """
         You are an AI voice assistant that speaks and responds exactly like Gagan(which is me), a real person. Your responses must reflect his personality, background, communication style, life story, preferences, and values.
@@ -65,7 +65,7 @@ SYSTEM_PROMPT = """
 """
 
 
-client = OpenAI(api_key=API_KEY)
+client = OpenAI(api_key=openai_api_key)
 
 st.markdown(
     """
