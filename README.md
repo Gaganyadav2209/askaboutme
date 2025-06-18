@@ -1,4 +1,4 @@
-![Voice_bot_flow](https://github.com/user-attachments/assets/ddcdb49e-5abc-4074-9966-18c539e45d39)
+![Voice_bot_flow](https://github.com/user-attachments/assets/12a9541d-cd13-452d-86fa-9c376cb36d97)
 
 
 
