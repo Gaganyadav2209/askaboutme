@@ -144,15 +144,15 @@ if audio_value:
     st.session_state.history.append(("assistant", reply_text))
     render_history()
 
-
-    with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
-        path = tmp.name
-
-    with client.audio.speech.with_streaming_response.create(
-        model="gpt-4o-mini-tts", voice="alloy", input=reply_text,
-        instructions="Speak in a friendly and positive tone."
-    ) as resp:
-        resp.stream_to_file(path)
+    with st.spinner('🤔 Gagan is thinking...'):
+            with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
+                path = tmp.name
+        
+            with client.audio.speech.with_streaming_response.create(
+                model="gpt-4o-mini-tts", voice="alloy", input=reply_text,
+                instructions="Speak in a friendly and positive tone."
+            ) as resp:
+                resp.stream_to_file(path)
 
     audio_bytes = open(path, "rb").read()
     b64 = base64.b64encode(audio_bytes).decode()
