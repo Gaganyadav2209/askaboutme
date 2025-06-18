@@ -1,3 +1,7 @@
+![Voice_bot_flow](https://github.com/user-attachments/assets/ddcdb49e-5abc-4074-9966-18c539e45d39)
+
+
+
 Talk to an AI version of me – Gagan – and hear it respond like a real human.
 Built using OpenAI’s GPT-4o, Streamlit, and TTS/STT APIs. Just record your voice, ask questions, and get friendly, natural replies – spoken back to you!
 
@@ -14,3 +18,5 @@ Frontend -	Streamlit + HTML/CSS for styling
 LLM Backend -	OpenAI GPT-4o (chat + TTS + STT)
 State Mgmt -	Streamlit Session State
 Deployment - Streamlit Cloud
+
+
