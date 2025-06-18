@@ -111,6 +111,8 @@ render_history()
 
 st.title("Ask about me!")
 
+with st.container():
+    st.markdown('<div class="voice-card"><h3>Click Mic button to start recording</h3></div>', unsafe_allow_html=True)
 
 audio_value = st.audio_input("")
 
